@@ -1,0 +1,40 @@
+
+<div class="container">
+  <div class="contenedor my-5">
+    <img src={{img}} alt="">
+    <hr/>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Rick Sanchez..."
+      (input)="filter($event)"
+      >
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let item of data">
+      <div class="card" style="width: 18rem;">
+        <img src={{item.image}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="card_flex">
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 [ngClass]="{
+              'btn-success': item.status === 'Alive',
+              'btn-danger': item.status === 'Dead',
+              'btn-probability': item.status === 'unknown'
+            }">{{item.status}}</h6>
+          </span>
+          <p class="card-text">Species: {{item.species}}</p>
+          <p class="card-text card_text2">Gender: {{item.gender}}</p>
+          <p class="card-text card_text2">Origin: {{item.origin.name}}</p>
+
+          <div class="row_extra">
+            <hr/>
+            <p class="card-text card_text2">{{item.location.name}}</p>
+            <p class="card_fecha">Sep 5, 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

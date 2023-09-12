@@ -1,0 +1,79 @@
+.contenedor{
+  text-align: center;
+}
+.contenedor img{
+  width: 45%;
+}
+.row{
+  justify-content: center;
+  gap: 25px 25px;
+}
+
+
+.card {
+  background-color: #06b0c7;
+  color: white;
+  box-shadow: 1px 2px 5px 7px #85c87f  ;
+}
+
+.card-text{
+  font-weight: 600;
+}
+
+h6{
+  font-size: 18px;
+}
+
+.card_fecha{
+  font-size: 11px;
+}
+
+.card_text2{
+  margin-top: -10px;
+}
+
+
+.btn-success{
+    background-color: green;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-danger{
+    background-color: red;
+    color: white;
+    width: 21%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+.btn-probability{
+  background-color: gray;
+    color: white;
+    width: 34%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+.card_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.btn-alien{
+  color: #58c98b;
+}
+
+.btn-human{
+  color: #f3e3d4;
+}
+
+.row_extra{
+  text-align: center;
+}
